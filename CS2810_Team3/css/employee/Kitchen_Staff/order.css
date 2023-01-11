@@ -1,0 +1,83 @@
+
+#order{
+	font-family:Courier New;
+	min-height:100vh;
+	height:auto;
+	background-color:rgb(165, 29, 50);
+	padding:10px;
+	margin:0;
+	bottom:0;
+	text-align:center;
+}
+
+#order button{
+	text-align:center;
+	
+	font-weight:900;
+	
+	background-color: rgb(0, 104, 71);
+	width: 35%;
+	min-width:35%;
+	padding: 12px 20px;
+	margin: 30px 0px 0px 0px;
+	box-sizing: border-box;
+	border: 3px solid black;
+	color: white;
+	border-radius: 5px;
+	cursor: pointer;
+	-webkit-transition: all .1s linear;
+	-moz-transition: all .1s linear;
+	-ms-transition: all .1s linear;
+	-o-transition: all .1s linear;
+	transition: all .1s linear;
+}
+
+#order button:hover{
+	background-color:rgb(3, 173, 119, 1);
+    color: white;
+}
+
+#details{
+	text-align:center;
+	display:grid;
+	grid-template-rows:auto auto;
+}
+
+#title{
+	text-align: center;
+}
+
+#title p{
+	text-align:center;
+	font-size:40px;
+	color:black;
+	position:relative;
+	font-weight:600;
+	margin:30px 0px 30px 0px;
+	
+}
+
+#title p::after{
+	content: "";
+	text-align:center;
+	font-size:30px;
+	background:rgb(0, 104, 71);
+	position:absolute;
+	
+	bottom: -15px;
+	left: 46.7%;
+	height: 4px;
+	width: 7%;
+	
+}
+
+#info{
+	font-weight:900;
+	font-size:20px;
+	background: rgb(3, 173, 119, 1);
+	border-left: 5px solid rgb(0, 104, 71);
+	margin:10px 0px 10px 0px;
+	text-align:center;
+	display:grid;
+	grid-template-columns:2fr 2fr 2fr;
+}

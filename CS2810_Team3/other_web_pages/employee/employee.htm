@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE HTML>
+<html lang="en-GB">
+<head>
+	<meta charset="utf-8">
+	<title >Oaxaca Restaurants</title>
+	<link rel="icon" href="../../image/icon/utensils-solid-icon.png" type="image/png">
+	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="initial-scale=1">
+<!--	
+	The scripts below allow us to import and use jquery 3.6.0 framework library 
+	for easily accessing tags through their id, along with allowing us to make
+	POST method calls to php files through js files.
+-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--
+	The style sheets below allow the styling of various tags of the website,
+	This is so that the webpage has cohesion in the way it looks.
+-->
+	<link rel="stylesheet" href="../../css/employee/emp_form.css">
+	<link rel="stylesheet" href="../../css/normalize.css">
+	<link rel="stylesheet" href="../../css/all.css">
+	<link rel="stylesheet" href="../../css/employee/employee.css">
+	<link rel="stylesheet" href="../../css/top-button.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+	
+	<style media="screen" type="text/css">
+	
+	img {
+		max-width: 100%;
+			}
+	
+	
+	</style>
+</head>
+<body>
+<!--
+	'Top' button works with the topbutton.js script. Once clicked, it will smooth scroll to the top of the page.
+-->
+<button id="topBtn" title="Go to top"><strong>Top</strong></button> 
+<!-- 
+	"container" div inside the 'body' tag is used to contain divs with id's 'header', 'body' and 'footer'.
+	These divs are used to create abstract tags instead of using the tags with those names.
+-->
+<div id="container">
+	<div id="header">
+		<div class="head-grid">
+			<div class="head-item1">
+				<a style="text-decoration:none;" href="../../oaxaca.htm"><section id="Name">Oaxaca</section></a>
+			</div>
+			<div class="head-item2">
+			
+				<div class="b-item">
+					<a class="headbutton home" href="../../oaxaca.htm" >
+						Home <i class="fas fa-home"></i>
+					</a>
+				</div>
+				<div class="b-item" >
+					<a class="headbutton" href="../aboutus.htm" style="border-right: 1px solid rgb(64,64,64);">
+						About Us <i class="fas fa-address-card"></i>
+					</a>
+				</div>
+				<div class="b-item" >
+					<a class="headbutton" href="../cust_menu.htm" >
+						Our Menu <i class="fas fa-pepper-hot"></i>
+					</a>
+				</div>
+				<div class="b-item">
+					<a class="headbutton" href="../contact.htm" style="border-left: 1px solid rgb(64,64,64);">
+						Contact Us <i class="fas fa-envelope-square"></i> 
+					</a>
+				</div>
+			
+			</div>
+		</div>
+	</div>
+<!--
+	Below the header is the "body" div. This is where the main content of the web-page are.
+	The form below allows the employee to enter their details and submit this to the relevant scripts
+	so they can be authorised to access their account.
+-->
+	<div id="body">
+		<div id="empform">
+			<p> WELCOME, PLEASE LOGIN TO ACCESS YOUR ACCOUNT</p>
+			<form class="login-form" action="" method="post" onsubmit="return confirm('Please confirm to proceed');">
+				<input name="username"  id ="empId" autocomplete="off" type="text" required="required" placeholder="Username">
+				<input name="password" id="passwd" autocomplete="off" type="password" required="required" placeholder="Password">
+
+				<button class ="login-form login" type="submit" name="login"><strong>SIGN IN</strong></button>
+				<button class="login-form return" type="button" onclick="returnToMain()"><strong>Return</strong></button> 
+			
+			</form>
+			<!--
+				the script below redirects users to the Oaxaca.htm page on the click of the Return button.
+			-->
+			<script>
+				function returnToMain(){
+					window.location.href = '../../oaxaca.htm';
+				}
+				
+			</script>
+			
+	</div>
+<!--
+	The footer is used to display data such as a copy-right claim along with a script that automatically updates the year
+	by getting the full year of a Date object.
+-->	
+	<div id="footer">
+		<div id="footer-item">
+			<p>&copy; <span id="year"></span> Oaxaca Restaurants</p>
+			<script>
+				document.getElementById("year").innerHTML = new Date().getFullYear();
+			</script>
+		</div>
+	</div>
+</div>
+</body>
+<!--
+	The scripts below allow dynamic manipulation of the webpage. A script
+	are used to limit the users permissions after they have reserved a table 
+	additionally, for smooth scrolling on auto-scroll, and gong to top on page reload.
+-->
+	<script src="../../scripts/employee/login.js"></script>
+	<script src="../../scripts/checkLoggedin.js"></script>
+	<script src="../../scripts/smoothScroll.js"></script>
+	<script src="../../scripts/topButton.js"></script>
+	<script src="../../scripts/goTop.js"></script>
+	<script src="../../scripts/reloadTop.js"></script>
+</html>

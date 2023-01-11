@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE HTML>
+<html lang="en-GB">
+<head>
+	<title >Oaxaca Restaurants</title>
+	<link rel="icon" href="../../image/icon/utensils-solid-icon.png" type="image/png">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="initial-scale=1">
+<!--	
+	The scripts below allow us to import and use jquery 3.6.0 framework library 
+	for easily accessing tags through their id, along with allowing us to make
+	POST method calls to php files through js files.
+-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!--
+	The style sheets below allow the styling of various tags of the website,
+	This is so that the webpage has cohesion in the way it looks.
+-->
+	<link rel="stylesheet" href="../../../css/normalize.css">
+	<link rel="stylesheet" href="../../../css/all.css">
+	<link rel="stylesheet" href="../../../css/employee/Training_Page/training_chef.css">
+	<link rel="stylesheet" href="../../../css/top-button.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+	
+	<style media="screen" type="text/css">
+	
+	img {
+		max-width: 100%;
+			}
+	
+	.fas.fa-shopping-basket{
+		color:rgb(0,0,0,0.9);
+		font-size:35px;
+		transition: all .2s linear;
+	}
+	
+	.fas.fa-briefcase{
+		color:rgb(255,255,255);
+		font-size:35px;
+		transition: all .2s linear;
+	}
+	
+	
+	</style>
+</head>
+<body>
+<!--
+	'Top' button works with the topbutton.js script. Once clicked, it will smooth scroll to the top of the page.
+-->
+<button id="topBtn" title="Go to top"><strong>Top</strong></button> 
+<!-- 
+	"container" div inside the 'body' tag is used to contain divs with id's 'header', 'body' and 'footer'.
+	These divs are used to create abstract tags instead of using the tags with those names.
+-->
+<div id="container">
+	<div id="header">
+		<div class="head-grid">
+			<div class="head-item1">
+				<a style="text-decoration:none;" href="chef.htm"><section id="Name">Oaxaca</section></a>
+			</div>
+			<div class="head-item2">
+			
+				<div class="b-item">
+					<a class="headbutton waiter" href="ks_training.htm" style="border-right: 1px solid rgb(64,64,64);color: rgb(165, 29, 50);">Your Training</a>
+				</div>
+				<div class="b-item" >
+					<a class="headbutton" href="chef.htm" >
+						Orders <i class="fas fa-pepper-hot"></i>
+					</a>
+				</div>
+				<div class="b-item" id = "logoutEmp" href="" style="border-left: 1px solid rgb(64,64,64);">
+					<a class="headbutton logout" href="">
+						Logout <i class="far fa-window-close"></i>
+					</a>
+				</div>
+			
+			</div>
+		</div>
+	</div>
+<!--
+	Below the header is the "body" div. This is where the main content of the web-page are.
+	The body below contains paragraph tags which outline the training required for kitchen staff.
+-->
+	<div id="body">
+		<div id="trainingpage">
+			<div id="chef">
+				<h1 style="text-align:center;">Kitchen Staff Training</h2>
+				<br><br>
+				<h3 style="text-align:left;">Responsibilities</h3>
+
+				<p>
+					<ul>
+						<li>Preparing, cooking and presenting high quality dishes within the speciality section.</li>
+
+						<li>Assisting the Head Chef and Sous Chef in creating menu items, recipes and developing dishes.</li>
+
+						<li>Preparing meat and fish.</li>
+
+						<li>Assisting with the management of food hygiene practices.</li>
+
+						<li>Assisting with the management of health and safety.</li>
+
+						<li>Managing and training any Commis Chefs.</li>
+
+						<li>Monitoring portion and waste control.</li>
+
+						<li>Overseeing the maintenance of kitchen and food safety standards.</li>
+
+						<li>Initiate and oversee the production of all meals produced during the shift and in preparation for other shifts.</li>
+
+						<li>Ensure the timely provision of high quality and optimum quantities of food from the College kitchen, relevant to the shift, for students, staff and visitors, as directed by the Sous Chef.</li>
+
+						<li>To supervise the activities of all the Commis Chefs & Kitchen Porters during the shift.</li>
+
+						<li>Ensure adherence to the organisation's Food Safety and Health & Safety policies at all times. </li>
+
+						<li>Assisting with the management of health and safety.</li>
+
+						<li>Take responsibility for the ordering of stock as required and directed by the Sous Chef.</li>
+
+						<li>Be responsible for taking delivery and safe storage of deliveries on your shift as directed by the Sous Chef.</li>
+
+						<li>Ensure that necessary paperwork, administration, controls and records are undertaken and maintained as directed by the Head Chef to include Health & Safety, Food Safety and any other as requested.</li>
+
+						<li>Participate in training programmes as required and, in liaison with the Sous Chef, ensure that training requirements for team members are identified and followed up.</li>
+
+						<li>Ensure that high standards of customer service are maintained at all times.</li>
+
+						<li>Cover some aspects of the Sous Chef role as appropriate and as directed.</li>
+						
+						<li>Any other reasonable duties as requested by the Sous Chef/Head Chef.</li>
+
+					</ul>  
+				</p>
+
+				<h3 style="text-align:left;">How to navigate through the website</h3>
+				<p>
+					<ul>
+						<li>Login with the login details provided by the manager.</li>
+						<li>In the Kitchen staff page, you will be given 3 buttons/category for the managing your job. The buttons are "Your Training", "Orders" and "Logout".</li>
+						<li>Once you click the "Your Training" button, you will be taken to the new page which displays you responsibilities as a Kitchen Staff and how use the website for managing the orders.</li>
+						<li>Once you click the "Orders" button, you will be taken to the new page which displays the current orders that are yet to be served in a form of a list, to view an order press the "view order" button which will display the order details that you have to prepare, once the order is prepared you can select the "Mark order is ready to start button" to tell the waiter that the order is ready to serve and do the same for the other orders.</li>
+						<li>Once you click the "Logout" button, you will be logged out the website. </li>
+						
+					</ul>
+				</p>
+			</div>
+
+		</div>
+	</div>
+<!--
+	The footer is used to display data such as a copy-right claim along with a script that automatically updates the year
+	by getting the full year of a Date object.
+-->	
+	<div id="footer">
+		<div id="footer-item">
+			<p>&copy; <span id="year"></span> Oaxaca Restaurants</p>
+			<script>
+				document.getElementById("year").innerHTML = new Date().getFullYear();
+			</script>
+		</div>
+	</div>
+</div>
+</body>
+<!--
+	The scripts below allow dynamic manipulation of the webpage. A script
+	are used to limit the users permissions after they have reserved a table 
+	additionally, for smooth scrolling on auto-scroll, and gong to top on page reload.
+-->
+	<script src="../../../scripts/employee/logOut.js"></script>
+	<script src="scripts/smoothScroll.js"></script>
+	<script src="scripts/topButton.js"></script>
+	<script src="scripts/goTop.js"></script>
+	<script src="scripts/reloadTop.js"></script>
+</html>

@@ -1,0 +1,152 @@
+#manager_main{
+	font-family:Courier New;
+	min-height:100vh;
+	height:auto;
+	background-color:rgb(165, 29, 50);
+	padding:10px;
+	margin:0;
+	bottom:0;
+}
+
+#title{
+	text-align: center;
+}
+
+#title p{
+	text-align:center;
+	font-size:40px;
+	color:black;
+	position:relative;
+	font-weight:600;
+	margin:30px 0px 30px 0px;
+	
+}
+
+#title p::after{
+	content: "";
+	text-align:center;
+	font-size:30px;
+	background:rgb(0, 104, 71);
+	position:absolute;
+	
+	bottom: -15px;
+	left: 46.7%;
+	height: 4px;
+	width: 7%;
+	
+}
+
+#backbutton{
+	text-align:center;
+}
+
+#backbutton button{
+	text-align:center;
+	
+	font-weight:900;
+	font-size:15px;
+	background-color:rgb(230, 230, 230);
+	width: 10%;
+	min-width:10%;
+	height:40px;
+	padding: 0px;
+	margin: 0px 0px 0px 0px;
+	box-sizing: border-box;
+	border: 3px solid black;
+	color: black;
+	border-radius: 5px;
+	cursor: pointer;
+	-webkit-transition: all .1s linear;
+	-moz-transition: all .1s linear;
+	-ms-transition: all .1s linear;
+	-o-transition: all .1s linear;
+	transition: all .1s linear;
+}
+
+#backbutton button:hover{
+	background-color:  rgb(0, 104, 71);
+    color: white;
+}
+
+#form{
+	text-align:center;
+}
+
+.accounts-form{
+	text-align:center;
+}
+
+.accounts-form select{
+	background-color:rgb(230, 230, 230);
+	width: 50%;
+	min-width:50%;
+	padding: 12px 20px;
+	margin:20px 60px 0px 60px;
+	
+	box-sizing: border-box;
+	
+	font-family:Courier New;
+	color:black;
+	font-size:16px;
+	font-weight:600;
+	
+	border: 3px solid black;
+	border-radius: 5px;
+}
+
+.accounts-form select option{
+	background-color:rgb(0, 104, 71);
+	color: rgb(230, 230, 230);
+}
+
+.accounts-form select option:checked{
+  background-color: rgb(230, 230, 230);
+  color:black;
+}
+
+.accounts-form button{
+	background-color:rgb(230, 230, 230);
+	width: 40%;
+	min-width:40%;
+	padding: 12px 20px;
+	margin:40px 60px 30px 60px;
+	box-sizing: border-box;
+	border: 3px solid black;
+	color: black;
+	border-radius: 5px;
+	cursor: pointer;
+	-webkit-transition: all .2s linear;
+	-moz-transition: all .3s linear;
+	-ms-transition: all .2s linear;
+	-o-transition: all .2s linear;
+	transition: all .2s linear;
+}
+
+.accounts-form button:hover{
+	background-color:  rgb(0, 104, 71);
+    color: white;
+}
+
+.accounts-form input[type=text] {
+	background-color:rgb(230, 230, 230);
+	width: 50%;
+	min-width:50%;
+	padding: 12px 20px;
+	margin:20px;
+	
+	box-sizing: border-box;
+	
+	font-family:Courier New;
+	color:black;
+	font-size:16px;
+	font-weight:600;
+	
+	border: 3px solid black;
+	border-radius: 5px;
+	
+}
+
+.accounts-form input:focus {
+	border: 3px solid black;
+	border-radius: 5px;
+}

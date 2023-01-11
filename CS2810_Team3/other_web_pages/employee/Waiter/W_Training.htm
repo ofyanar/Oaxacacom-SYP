@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE HTML>
+<html lang="en-GB">
+<head>
+	<title >Oaxaca Restaurants</title>
+	<link rel="icon" href="../../image/icon/utensils-solid-icon.png" type="image/png">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="initial-scale=1">
+<!--	
+	The scripts below allow us to import and use jquery 3.6.0 framework library 
+	for easily accessing tags through their id, along with allowing us to make
+	POST method calls to php files through js files.
+-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!--
+	The style sheets below allow the styling of various tags of the website,
+	This is so that the webpage has cohesion in the way it looks.
+-->
+	<link rel="stylesheet" href="../../../css/normalize.css">
+	<link rel="stylesheet" href="../../../css/all.css">
+	<link rel="stylesheet" href="../../../css/employee/Training_Page/training_waiter.css">
+	<link rel="stylesheet" href="../../../css/top-button.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+	
+	<style media="screen" type="text/css">
+	
+	img {
+		max-width: 100%;
+			}
+	
+	.fas.fa-shopping-basket{
+		color:rgb(0,0,0,0.9);
+		font-size:35px;
+		transition: all .2s linear;
+	}
+	
+	.fas.fa-briefcase{
+		color:rgb(255,255,255);
+		font-size:35px;
+		transition: all .2s linear;
+	}
+	
+	
+	</style>
+</head>
+<body>
+<!--
+	'Top' button works with the topbutton.js script. Once clicked, it will smooth scroll to the top of the page.
+-->
+<button id="topBtn" title="Go to top"><strong>Top</strong></button> 
+<!-- 
+	"container" div inside the 'body' tag is used to contain divs with id's 'header', 'body' and 'footer'.
+	These divs are used to create abstract tags instead of using the tags with those names.
+-->
+<div id="container">
+	<div id="header">
+		<div class="head-grid">
+			<div class="head-item1">
+				<a style="text-decoration:none;" href="waiter.htm"><section id="Name">Oaxaca</section></a>
+			</div>
+			<div class="head-item2">
+			
+				<div class="b-item" style="border-right: 1px solid rgb(64,64,64);">
+					<a class="headbutton waiter" href="W_Training.htm" style="color: rgb(165, 29, 50);"> Your Training </a>
+				</div>
+				<div class="b-item">
+					<a class="headbutton" href="waiter.htm">
+						Orders <i class="fas fa-pepper-hot"></i>
+					</a>
+				</div>
+				<div class="b-item" id = "requests" style="border-left: 1px solid rgb(64,64,64); border-right: 1px solid rgb(64,64,64);">
+					<a class="headbutton" href="requested.htm" >
+						Requested Tables <i class='fas fa-regular fa-hand-sparkles'></i>
+					</a>
+				</div>
+				<div class="b-item" id = "payments">
+					<a class="headbutton" href="confirmpayments.htm" >
+						Payment Confirmation <i class="fas fa-solid fa-receipt"></i>
+					</a>
+				</div>
+				<div class="b-item" id = "logoutEmp" href="" style="border-left: 1px solid rgb(64,64,64);">
+					<a class="headbutton logout" href="">
+						Logout <i class="far fa-window-close"></i>
+					</a>
+				</div>
+			
+			</div>
+		</div>
+	</div>
+<!--
+	Below the header is the "body" div. This is where the main content of the web-page are.
+	The body below contains paragraph tags which outline the training required for waiting staff.
+-->
+	<div id="body">
+		<div id="trainingpage">
+			<div id="info">
+				<h1 style="text-align:center;">Waiter Training</h1>
+				<br>
+				<h3 style="text-align:left;">Before you start working</h3>
+				<p >
+					<ul>
+						<li>Check cleanliness of your area.</li>
+						<li>Check cleanliness of station.</li>
+						<li>Check that all menus are clean.</li>
+						<li>Check restrooms.</li>
+						<li>Check that tableware is clean, and that glassware and dishware are not chipped.</li>
+						<li>Check that tablecloths and napkins are clean.</li>
+						<li>Study specials to be ready to answer customer's questions.</li>
+						<li>Discuss any issues with the manager.</li>
+					</ul>  
+				</p>
+
+				<h3 style="text-align:left;">Welcoming Customers</h3>
+				<p>
+					<ul>
+						<li>Greet customers with a smile.</li>
+						<li>Introduce yourself with your first name.</li>
+						<li>Take special care for elderly customers, customers with disabilities, children, expectant women, etc.</li>
+						<li>Stay within arm’s length of the customer as you’re escorting them to their table.</li>
+					</ul>  
+				</p>
+
+				<h3 style="text-align:left;">While taking orders</h3>
+				<p>
+					<ul>
+						<li>Take orders starting from the drinks and suggestively sell an appetizer.</li>
+						<li>Give menus to ladies first and then continue clockwise.</li>
+						<li>When there are multiple guests at the table, take the order from left to right.</li>
+						<li>If they seem to be in a hurry, suggest menu items that take less time to prepare.</li>
+						<li>Let customers know if a dish they ordered requires more time.</li>
+						<li>Repeat the order back to the customer.</li>
+						<li>Ask guests who haven’t ordered food whether they prefer to wait or receive the main course with the rest of the items.</li>
+					</ul>  
+				</p>
+
+				<h3 style="text-align:left;">During service</h3>
+				<p>
+					<ul>
+						<li>Check back every 20 minutes to ensure everything is OK.</li>
+						<li>Be alert for any signs of discomfort or dissatisfaction. Discuss with your manager if necessary.</li>
+						<li>Clean the table for dessert from the guest's right side with the right hand, and then transfer it to the left hand.</li>
+						<li>Remove bread and butter, soiled dishes, cutleries, and condiments.</li>
+					</ul>  
+				</p>
+
+				<h3 style="text-align:left;">How to navigate through the website</h3>
+				<p>
+					<ul>
+						<li>Login with the login details provided by the manager.</li>
+						<li>After logging in, you will be able access the waiter employee page</li>
+						<li>In the waiter page, you will be given 5 buttons/category for the managing your job. The buttons are "Your Training", "Orders", "Requested Tables", "Payment Confirmation" and "Logout".</li>
+						<li>Once you click the "Your Training" button, you will be taken to the new page which displays you responsibilities as a waiter and how use the website for managing the orders.</li>
+						<li>Once you click the "Orders" button, you will be taken to the new page which displays the orders that are ready to serve , you will be given 2 option for each order. One is "Order served", which allows you to mark the order as served and order will be taken to the "payment confirmation" page. And the other is "cancel order" with allows you to cancel the order.</li>
+						<li>Once you click the "Payment Confirmation" button, you will be taken to the new page which displays the orders that have been served, once you receive the payment for an order you can press the "confirm payment" button which will just confirm that the you received the payment from the customer. </li>
+						<li>Once you click the "Requested Tables" button, you will be taken to the new page which displays the tables number and time in which it was requested by the customer, after checking in with the customer you can mark it as done.</li>
+						<li>Once you click the "Logout" button, you will be logged out the website.</li>
+					</ul>  
+				</p>
+			</div>
+
+
+		</div>
+	</div>
+<!--
+	The footer is used to display data such as a copy-right claim along with a script that automatically updates the year
+	by getting the full year of a Date object.
+-->	
+	<div id="footer">
+		<div id="footer-item">
+			<p>&copy; <span id="year"></span> Oaxaca Restaurants</p>
+			<script>
+				document.getElementById("year").innerHTML = new Date().getFullYear();
+			</script>
+		</div>
+	</div>
+</div>
+</body>
+<!--
+	The scripts below allow dynamic manipulation of the webpage. A script
+	are used to limit the users permissions after they have reserved a table 
+	additionally, for smooth scrolling on auto-scroll, and gong to top on page reload.
+-->
+	<script src="../../../scripts/employee/logout.js"></script>
+	<script src="../../../scripts/smoothScroll.js"></script>
+	<script src="../../../scripts/topButton.js"></script>
+	<script src="../../../scripts/goTop.js"></script>
+	<script src="../../../scripts/reloadTop.js"></script>
+</html>

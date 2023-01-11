@@ -1,0 +1,119 @@
+
+#empform{
+		font-family:Courier New;
+		min-height:90vh;
+		height:auto;
+		background-color:rgb(165, 29, 50);
+		padding:10px;
+		margin:0;
+		bottom:0;
+	}
+	
+#empform p{
+	text-align:center;
+	font-size:20px;
+	color:black;
+	position:relative;
+	font-weight:600;
+	margin:30px;
+	
+}
+
+#empform p::after{
+	content: "";
+	text-align:center;
+	font-size:20px;
+	background:rgb(0, 104, 71);
+	position:absolute;
+	
+	bottom: -15px;
+	left: 46.7%;
+	height: 4px;
+	width: 7%;
+	
+}
+
+.login-form{
+	text-align:center;
+	font-size:18px;
+}
+
+.login-form ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: black;
+}
+
+.login-form ::-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: black;
+}
+
+.login-form ::-ms-input-placeholder { /* Microsoft Edge */
+  color: black;
+}
+
+.login-form input[type=text], input[type=password] {
+	background-color:rgb(230, 230, 230);
+	width: 50%;
+	min-width:50%;
+	padding: 12px 20px;
+	margin:20px;
+	
+	box-sizing: border-box;
+	
+	font-family:Courier New;
+	color:black;
+	font-size:16px;
+	font-weight:600;
+	
+	border: 3px solid black;
+	border-radius: 5px;
+	
+}
+
+.login-form input:focus {
+	border: 3px solid black;
+	border-radius: 5px;
+}
+
+.login-form textarea{
+	background-color:rgb(230, 230, 230);
+	width:80%;
+	height:170px;
+	resize:none;
+	padding: 12px 20px;
+	margin:20px;
+	box-sizing: border-box;
+	border: 3px solid black;
+	border-radius: 5px;
+	font-size:16px;
+	font-family:Courier New;
+	font-weight:600;
+	color:black;
+}
+
+.login-form textarea:focus {
+	border: 3px solid black;
+	border-radius: 5px;
+}
+
+.login-form button{
+	background-color:rgb(230, 230, 230);
+	width: 50%;
+	min-width:50%;
+	padding: 12px 20px;
+	margin:30px;
+	box-sizing: border-box;
+	border: 3px solid black;
+	color: black;
+	border-radius: 5px;
+	cursor: pointer;
+	-webkit-transition: all .2s linear;
+	-moz-transition: all .3s linear;
+	-ms-transition: all .2s linear;
+	-o-transition: all .2s linear;
+	transition: all .2s linear;
+	}
+
+.login-form button:hover{
+	background-color:  rgb(0, 104, 71);
+    color: white;
+}

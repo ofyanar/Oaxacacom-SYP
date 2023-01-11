@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE HTML>
+<html lang="en-GB">
+<head>
+	<title >Oaxaca Restaurants</title>
+	<link rel="icon" href="../image/icon/utensils-solid-icon.png" type="image/png">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="initial-scale=1">
+<!--	
+	The scripts below allow us to import and use jquery 3.6.0 framework library 
+	for easily accessing tags through their id, along with allowing us to make
+	POST method calls to php files through js files.
+-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!--
+	The style sheets below allow the styling of various tags of the website,
+	This is so that the webpage has cohesion in the way it looks.
+-->	
+	<link rel="stylesheet" href="../css/normalize.css">
+	<link rel="stylesheet" href="../css/all.css">
+	<link rel="stylesheet" href="../css/aboutus.css">
+	<link rel="stylesheet" href="../css/top-button.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+	
+	<style media="screen" type="text/css">
+	
+	img {
+		max-width: 100%;
+			}
+	
+	.fas.fa-shopping-basket{
+		color:rgb(0,0,0,0.9);
+		font-size:35px;
+		transition: all .2s linear;
+	}
+	
+	.fas.fa-briefcase{
+		color:rgb(255,255,255);
+		font-size:35px;
+		transition: all .2s linear;
+	}
+	
+	
+	</style>
+</head>
+<body>
+<!--
+	'Top' button works with the topbutton.js script. Once clicked, it will smooth scroll to the top of the page.
+-->
+<button id="topBtn" title="Go to top"><strong>Top</strong></button> 
+<!-- 
+	"container" div inside the 'body' tag is used to contain divs with id's 'header', 'body' and 'footer'.
+	These divs are used to create abstract tags instead of using the tags with those names.
+-->
+<div id="container">
+	<div id="header">
+		<div class="head-grid">
+			<div class="head-item1">
+				<a style="text-decoration:none;" href="../oaxaca.htm"><section id="Name">Oaxaca</section></a>
+			</div>
+			<div class="head-item2">
+			
+				<div class="b-item">
+					<a class="headbutton home" href="../oaxaca.htm" >
+						Home <i class="fas fa-home"></i>
+					</a>
+				</div>
+
+				<div class="b-item" >
+					<a class="headbutton aboutus" href="../other_web_pages/aboutus.htm" style="border-right: 1px solid rgb(64,64,64);">
+						About Us <i class="fas fa-address-card"></i>
+					</a>
+				</div>
+				<div class="b-item" >
+					<a class="headbutton" href="../other_web_pages/cust_menu.htm" >
+						Our Menu <i class="fas fa-pepper-hot"></i>
+					</a>
+				</div>
+				<div class="b-item">
+					<a class="headbutton" href="../other_web_pages/contact.htm" style="border-left: 1px solid rgb(64,64,64);">
+						Contact Us <i class="fas fa-envelope-square"></i> 
+					</a>
+				</div>
+			
+			</div>
+		</div>
+	</div>
+<!--
+	Below the header is the "body" div. This is where the main content of the web-page are.
+	There are paragraph tags that are used to display information regarding the Oaxaca restaurants' history.
+-->	
+	<div id="body">
+		<div id="aboutus">
+			<div id="info">
+				<h1 style="text-align:center;">About Us</h1>
+				<br>
+				<p >Oaxaca is a restaurant group that has been slowly growing its London and UK presence over the last 10 years and now they have 25 restaurants. When they started in 2007 their competitive advantage was their menu, a unique style of Mexican street food and their table service.<br>
+				<br>
+				We’re passionate about providing unique style of Mexican street food to customers. This relentless focus has helped us grow in UK. <br>
+				<br>
+				Since opening the first Oaxaaca’s store in the UK in 2007, we now have 25 stores across the UK and  more than "200" team members. This year, we are looking to expand Oaxaca's restaurant even more.<br>
+				<br>
+				We’re committed to offering choice, and with different types of combinations on our menu, customers have plenty of options. Our Mexican street food are made with great quality sourced ingredients, such as Tomatillos, nopal, beans, and Shredded beef and chicken etc.<br>
+				<br>
+				There are two ways to dine with us. One is off the menu which offers small plates, burrito's, nachos, tacos, quesadillas, platitos and desserts like Churros, drinks like mexican Hot Chocolate, beer etc. In addition to our printed menu, guests can also order directly online which is user friendly and quick to use. These nightly specials will be described tableside/online and range in price from $4-$12.<br>
+				</p></center>
+
+			</div>
+	
+		</div>
+	</div>
+<!--
+	The footer is used to display data such as a copy-right claim along with a script that automatically updates the year
+	by getting the full year of a Date object.
+-->	
+	<div id="footer">
+		<div id="footer-item">
+			<p>&copy; <span id="year"></span> Oaxaca Restaurants</p>
+			<script>
+				document.getElementById("year").innerHTML = new Date().getFullYear();
+			</script>
+		</div>
+	</div>
+</div>
+</body>
+<!--
+	The scripts below allow dynamic manipulation of the webpage. A script
+	are used to limit the users permissions after they have reserved a table 
+	additionally, for smooth scrolling on auto-scroll, and gong to top on page reload.
+-->
+	<script src="scripts/reloadTop.js"></script>
+	<script src="../scripts/checkTableReserved2.js"></script>
+	<script src="../scripts/smoothScroll.js"></script>
+	<script src="../scripts/topButton.js"></script>
+	<script src="../scripts/goTop.js"></script>
+</html>

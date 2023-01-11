@@ -1,0 +1,56 @@
+
+
+#total p{
+	text-align:center;
+	font-size:30px;
+	color:black;
+	position:relative;
+	font-weight:600;
+	margin:30px;
+	
+}
+
+#total p::after{
+	content: "";
+	text-align:center;
+	font-size:30px;
+	background:rgb(0, 104, 71);
+	position:absolute;
+	
+	bottom: -15px;
+	left: 46.7%;
+	height: 4px;
+	width: 7%;
+	
+}
+
+#checkoutbuttons{
+	display:grid;
+	text-align:center;
+	
+}
+
+#checkoutbuttons button{
+	text-align:center;
+	
+	background-color:rgb(230, 230, 230);
+	width: 60%;
+	min-width:60%;
+	padding: 12px 20px;
+	margin: 30px 0px 30px 0px;
+	box-sizing: border-box;
+	border: 3px solid black;
+	color: black;
+	border-radius: 5px;
+	cursor: pointer;
+	-webkit-transition: all .1s linear;
+	-moz-transition: all .1s linear;
+	-ms-transition: all .1s linear;
+	-o-transition: all .1s linear;
+	transition: all .1s linear;
+}
+
+#checkoutbuttons button:hover{
+	background-color:  rgb(0, 104, 71);
+    color: white;
+}

@@ -1,0 +1,115 @@
+
+#custform p{
+	text-align:center;
+	font-size:20px;
+	color:black;
+	position:relative;
+	font-weight:600;
+	margin:30px;
+	
+}
+
+#custform p::after{
+	content: "";
+	text-align:center;
+	font-size:20px;
+	background:rgb(0, 104, 71);
+	position:absolute;
+	
+	bottom: -15px;
+	left: 46.7%;
+	height: 4px;
+	width: 7%;
+	
+}
+.cust-form{
+	text-align:center;
+	font-size:18px;
+}
+
+.cust-form ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: black;
+}
+
+.cust-form ::-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: black;
+}
+
+.cust-form ::-ms-input-placeholder { /* Microsoft Edge */
+  color: black;
+}
+
+.cust-form select{
+	background-color:rgb(230, 230, 230);
+	width: 50%;
+	min-width:50%;
+	padding: 12px 20px;
+	margin:60px 60px 0 60px;
+	
+	box-sizing: border-box;
+	
+	font-family:Courier New;
+	color:black;
+	font-size:16px;
+	font-weight:600;
+	
+	border: 3px solid black;
+	border-radius: 5px;
+	
+}
+
+.cust-form select option{
+	background-color:rgb(0, 104, 71);
+	color: rgb(230, 230, 230);
+}
+
+.cust-form select optgroup{
+	background-color:rgb(0, 104, 71);
+	color: rgb(230, 230, 230);
+}
+
+.cust-form select option:checked{
+  background-color: rgb(230, 230, 230);
+  color:black;
+}
+
+.cust-form.proceed{
+	background-color:rgb(230, 230, 230);
+	width: 50%;
+	min-width:50%;
+	padding: 12px 20px;
+	margin:90px 60px 30px 60px;
+	box-sizing: border-box;
+	border: 3px solid black;
+	color: black;
+	border-radius: 5px;
+	cursor: pointer;
+	-webkit-transition: all .2s linear;
+	-moz-transition: all .3s linear;
+	-ms-transition: all .2s linear;
+	-o-transition: all .2s linear;
+	transition: all .2s linear;
+	}
+
+.cust-form.return{
+	background-color:rgb(230, 230, 230);
+	width: 50%;
+	min-width:50%;
+	padding: 12px 20px;
+	margin:0 60px 30px 60px;
+	box-sizing: border-box;
+	border: 3px solid black;
+	color: black;
+	border-radius: 5px;
+	cursor: pointer;
+	-webkit-transition: all .2s linear;
+	-moz-transition: all .3s linear;
+	-ms-transition: all .2s linear;
+	-o-transition: all .2s linear;
+	transition: all .2s linear;
+	}
+
+.cust-form button:hover{
+	background-color:  rgb(0, 104, 71);
+    color: white;
+}

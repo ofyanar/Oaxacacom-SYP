@@ -1,0 +1,41 @@
+
+#menu{
+	display:grid;
+	grid-template-columns:auto  auto;
+	text-align:center;
+	margin: 60px;
+}
+
+.main {
+	position: relative;
+	height: 200px;
+	width: 257px;
+	margin: 60px 0px 60px 100px;
+}
+
+.main-img{
+	height: 200px;
+	width: 257px;
+}
+.main-desc {
+	margin: 0px 0px 60px 0px;
+	text-align:center;
+	padding-top:60px;
+	height: 140px;
+	width: 257px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background:rgb(0, 104, 71, 0.72);
+	color: #fff;
+	visibility: hidden;
+	opacity: 0;
+	cursor:pointer;
+}
+
+.main:hover .main-desc {
+  visibility: visible;
+  opacity: 1;
+}

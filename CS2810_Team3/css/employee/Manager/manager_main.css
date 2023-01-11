@@ -1,0 +1,86 @@
+
+
+
+#manager_main{
+	font-family:Courier New;
+	min-height:100vh;
+	height:auto;
+	background-color:rgb(165, 29, 50);
+	padding:10px;
+	margin:0;
+	bottom:0;
+}
+
+#title{
+	text-align: center;
+}
+
+#title p{
+	text-align:center;
+	font-size:40px;
+	color:black;
+	position:relative;
+	font-weight:600;
+	margin:30px 0px 30px 0px;
+	
+}
+
+#title p::after{
+	content: "";
+	text-align:center;
+	font-size:30px;
+	background:rgb(0, 104, 71);
+	position:absolute;
+	
+	bottom: -15px;
+	left: 46.7%;
+	height: 4px;
+	width: 7%;
+	
+}
+
+#status{
+	display: grid;
+}
+
+
+.stat{
+	text-align:center;
+	margin:0px 0px 10px 0px;
+	font-weight:900;
+	
+}
+.stat p{
+	font-size:25px;
+	padding: 10px;
+	margin:30px 0px 60px 0px;
+}
+
+
+.stat button{
+	text-align:center;
+	
+	font-weight:900;
+	font-size:20px;
+	background-color:rgb(230, 230, 230);
+	width: 60%;
+	min-width:60%;
+	height:75px;
+	padding: 0px;
+	margin: 0px 0px 0px 0px;
+	box-sizing: border-box;
+	border: 3px solid black;
+	color: black;
+	border-radius: 5px;
+	cursor: pointer;
+	-webkit-transition: all .1s linear;
+	-moz-transition: all .1s linear;
+	-ms-transition: all .1s linear;
+	-o-transition: all .1s linear;
+	transition: all .1s linear;
+}
+
+.stat button:hover{
+	background-color:  rgb(0, 104, 71);
+    color: white;
+}

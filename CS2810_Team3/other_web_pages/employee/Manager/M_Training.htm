@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE HTML>
+<html lang="en-GB">
+<head>
+	<title >Oaxaca Restaurants</title>
+	<link rel="icon" href="../../../image/icon/utensils-solid-icon.png" type="image/png">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="initial-scale=1">
+<!--	
+	The scripts below allow us to import and use jquery 3.6.0 framework library 
+	for easily accessing tags through their id, along with allowing us to make
+	POST method calls to php files through js files.
+-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!--
+	The style sheets below allow the styling of various tags of the website,
+	This is so that the webpage has cohesion in the way it looks.
+-->
+	<link rel="stylesheet" href="../../../css/normalize.css">
+	<link rel="stylesheet" href="../../../css/all.css">
+	<link rel="stylesheet" href="../../../css/employee/Training_Page/training_manager.css">
+	<link rel="stylesheet" href="../../../css/top-button.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+	
+	<style media="screen" type="text/css">
+	
+	img {
+		max-width: 100%;
+			}
+	
+	.fas.fa-shopping-basket{
+		color:rgb(0,0,0,0.9);
+		font-size:35px;
+		transition: all .2s linear;
+	}
+	
+	.fas.fa-briefcase{
+		color:rgb(255,255,255);
+		font-size:35px;
+		transition: all .2s linear;
+	}
+	
+	
+	</style>
+</head>
+<body>
+<!--
+	'Top' button works with the topbutton.js script. Once clicked, it will smooth scroll to the top of the page.
+-->
+<button id="topBtn" title="Go to top"><strong>Top</strong></button> 
+<!-- 
+	"container" div inside the 'body' tag is used to contain divs with id's 'header', 'body' and 'footer'.
+	These divs are used to create abstract tags instead of using the tags with those names.
+-->
+<div id="container">
+	<div id="header">
+		<div class="head-grid">
+			<div class="head-item1">
+				<a style="text-decoration:none;" href="waiter.htm"><section id="Name">Oaxaca</section></a>
+			</div>
+			<div class="head-item2">
+			
+				<div class="b-item" style="border-right: 1px solid rgb(64,64,64);">
+					<a class="headbutton waiter" href="M_Training.htm" style="color: rgb(165, 29, 50);"> Your Training </a>
+				</div>
+				<div class="b-item">
+					<a class="headbutton" href="manager.htm">
+						Branch Status <i class="fas fa-solid fa-utensils"></i>
+					</a>
+				</div>
+				<div class="b-item" id = "revenue" style="border-left: 1px solid rgb(64,64,64); border-right: 1px solid rgb(64,64,64);">
+					<a class="headbutton" href="revenue.htm" >
+						Revenue <i class="fas fa-solid fa-money-bill"></i>
+					</a>
+				</div>
+				<div class="b-item" id = "stocks">
+					<a class="headbutton" href="stocks.htm" >
+						Stocks <i class="fas fa-regular fa-bread-slice"></i>
+					</a>
+				</div>
+				<div class="b-item" id = "accounts">
+					<a class="headbutton" href="accounts.htm" style="border-left: 1px solid rgb(64,64,64);">
+						Manage Accounts <i class="fas fa-regular fa-user"></i>
+					</a>
+				</div>
+				<div class="b-item" id = "logoutEmp" href="" style="border-left: 1px solid rgb(64,64,64);">
+					<a class="headbutton logout" href="">
+						Logout <i class="far fa-window-close"></i>
+					</a>
+				</div>
+			
+			</div>
+		</div>
+	</div>
+<!--
+	Below the header is the "body" div. This is where the main content of the web-page are.
+	The body below contains paragraph tags which outline the training required for managing staff.
+-->
+	<div id="body">
+		<div id="trainingpage">
+			<div id="manager">
+				<h1 style="text-align:center;">Manager Training</h2>
+				<br><br>
+				<h3 style="text-align:left;">Responsibilities</h3>
+				<p>
+					<ul>
+						<li>Recruiting, training and supervising staff - giving the staff a brief description on what to do and their responsibility.</li>
+						<li>Agreeing and managing budgets - Making sure that we have enough funds for food supply for the day.</li>
+						<li>Planning menus - checking which food stock is available and updating the menu according to that.</li>
+						<li>Ensuring compliance with licensing, hygiene and health and safety legislation/guidelines.</li>
+						<li>Promoting and marketing the business - making sure the website is working at all time.</li>
+						<li>Overseeing stock levels - making sure that the stock levels are delivered on time</li>
+						<li>Ordering supplies </li>
+						<li>Producing staff rotas - giving a brief explanation for the job responsibility for the day.</li>
+						<li>Handling customer enquiries and complaints.</li>
+						<li>Taking reservations - making the free waiters take in customer that haven't booked a table and letting them know how long will it take for their turn.</li>
+						<li>Greeting and advising customers - making sure that the waiters are greetinga and advising customers when they order.</li>
+						<li>Problem solving.</li>
+						<li>Preparing and presenting staffing/sales reports.</li>
+						<li>Keeping statistical and financial records.</li>
+						<li>Assessing and improving profitability.</li>
+						<li>Setting targets.</li>
+						<li>Making improvements to the running of the business and developing the restaurant.</li>
+					</ul>
+				</p>
+
+				<h3 style="text-align:left;">Customer services</h3>
+
+				<p>
+					<ul>
+						<li>Greeting and advising customers.</li>
+						<li>Delivering F&B service to satisfy customer expectations.</li>
+						<li>Fostering positive customer relations.</li>
+						<li>Dealing with customer inquiries and complaints.</li>
+					</ul>  
+				</p>
+
+				<h3 style="text-align:left;">Human resources</h3>
+
+				<p>
+					<ul>
+						<li>Recruiting, training and supervising staff.</li>
+						<li>Managing the staff rota.</li>
+						<li>Conducting performance appraisals and setting targets.</li>
+						<li>Optimizing workflow and productivity.</li>
+					</ul>  
+				</p>
+
+				<h3 style="text-align:left;">Supply chain, procurement and culinary edge</h3>
+
+				<p>
+					<ul>
+						<li>Researching dishes and planning menus.</li>
+						<li>Keeping abreast of inventory and ordering supplies.</li>
+						<li>Monitoring product quality and handling vendors.</li>
+					</ul>  
+				</p>
+
+				<h3 style="text-align:left;">Compliance, health and safety</h3>
+
+				<p>
+					<ul>
+						<li>Ensuring compliance with licensing, health and safety regulations</li>
+						<li>Establishing and maintaining policies and protocols</li>
+					</ul>  
+				</p>
+				<h3 style="text-align:left;">How to navigate through the website</h3>
+				<p>
+					<ul>
+						<li>Login in first.</li>
+						<li>After logging in, you will be able access the manager page.</li>
+						<li>In the manager page, you will be given 6 buttons/category for the managing your job. The buttons are "Your Training", "Brach status", "Revenue", "Stocks", "Manage Account" and "Logout".</li>
+						<li>Once you click the "Your Training" button, you will be taken to the new page which displays you responsibilities as a manager and how use the website for managing the restaurent.</li>
+						<li>Once you click the "Brach status" button, you will be taken to the new page which displays status of the branch, so you will be allowed to change the status of the branch to be open or close.</li>
+						<li>Once you click the "Revenue" button, you will be taken to the new page which displays the revenue generated for this month.</li>
+						<li>Once you click the "Stocks" button, you will be taken to the new page which displays current menu stock, the current menu stocks will be displayed by a table in which you can view the item name and the item quantity, if the item quality is low  for specific item you can press the restock button and the item quantity will update. </li>
+						<li>Once you click the "Manage Account" button, you will be taken to the new page which displays three different buttons which are "add account", "edit account", "delete account". For add account you can just make new employee account and assign a position to it. For edit account, you can change the employee password and the position. Lastly for delete account you can just select a specific employee ID and username to delete an existing account</li>
+						<li>Once you click the "Logout" button, you will be logged out the website. </li>
+					</ul>  
+				</p>
+
+			</div>
+		</div>
+	</div>
+<!--
+	The footer is used to display data such as a copy-right claim along with a script that automatically updates the year
+	by getting the full year of a Date object.
+-->	
+	<div id="footer">
+		<div id="footer-item">
+			<p>&copy; <span id="year"></span> Oaxaca Restaurants</p>
+			<script>
+				document.getElementById("year").innerHTML = new Date().getFullYear();
+			</script>
+		</div>
+	</div>
+</div>
+</body>
+<!--
+	The scripts below allow dynamic manipulation of the webpage. A script
+	are used to limit the users permissions after they have reserved a table 
+	additionally, for smooth scrolling on auto-scroll, and gong to top on page reload.
+-->
+	<script src="../../../scripts/employee/logout.js"></script>
+	<script src="../../../scripts/smoothScroll.js"></script>
+	<script src="../../../scripts/topButton.js"></script>
+	<script src="../../../scripts/goTop.js"></script>
+	<script src="../../../scripts/reloadTop.js"></script>
+</html>

@@ -1,0 +1,30 @@
+#topBtn {
+	display: none; /* Hidden by default */
+	font-family:Courier New; /*font*/
+	position: fixed; /* Fixed/sticky position */
+	
+	bottom: 20px; /* Place the button at the bottom of the page */
+	right: 25px; /* Place the button 30px from the right */
+	
+	z-index: 50; /* Make sure it does not overlap */
+	border-radius: 50%;
+	width:50px;
+	height:50px;
+	border: none;  /*Remove borders */
+	outline: none; /* Remove outline */
+	background-color: rgb(0, 104, 71); /* Set a background color */
+	color: black; /* Text color */
+	cursor: pointer; /* Add a mouse pointer on hover */
+	padding: 15px; /* Some padding */
+	font-size: 12px; /* Increase font size */
+	-webkit-transition: all .2s linear;
+	-moz-transition: all .3s linear;
+	-ms-transition: all .2s linear;
+	-o-transition: all .2s linear;
+	transition: all .2s linear;
+	}
+
+#topBtn:hover {
+	background-color: yellow;/* Add a light-grey background on hover */
+	color:black;
+	}
